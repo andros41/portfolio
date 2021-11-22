@@ -25,5 +25,5 @@ class Portfolio:
 
     def cost(self):
         return sum(
-            shares * price for name, shares, price in self._stocks
+            shares / price for name, shares, price in self._stocks
         )
